@@ -1,0 +1,25 @@
+export default function Navbar() {
+
+  return (
+
+    <div className="flex justify-between items-center p-4 bg-white shadow">
+
+      <h1 className="text-blue-600 font-bold text-xl">
+
+        HostelFinder
+
+      </h1>
+
+      <div className="space-x-4">
+
+        <a href="/" className="text-gray-600">Home</a>
+
+        <a href="/hostels" className="text-gray-600">Hostels</a>
+
+      </div>
+
+    </div>
+
+  )
+
+}
