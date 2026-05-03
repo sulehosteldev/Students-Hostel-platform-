@@ -1,0 +1,35 @@
+import Hero from "@/components/Hero"
+
+import HostelCard from "@/components/HostelCard"
+
+import { hostels } from "@/lib/data"
+
+export default function Home() {
+
+  return (
+
+    <div>
+
+      <Hero />
+
+      <h2 className="text-center text-2xl font-bold mt-8">
+
+        Featured Hostels
+
+      </h2>
+
+      <div className="grid md:grid-cols-3 gap-6 p-6">
+
+        {hostels.map((h) => (
+
+          <HostelCard key={h.id} hostel={h} />
+
+        ))}
+
+      </div>
+
+    </div>
+
+  )
+
+}
