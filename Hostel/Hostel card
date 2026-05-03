@@ -1,0 +1,49 @@
+export default function HostelCard({ hostel }) {
+
+  return (
+
+    <div className="bg-white shadow rounded-lg overflow-hidden">
+
+      <img
+
+        src={hostel.image}
+
+        className="h-40 w-full object-cover"
+
+      />
+
+      <div className="p-4">
+
+        <h3 className="font-bold">{hostel.name}</h3>
+
+        <p className="text-gray-500 text-sm">{hostel.location}</p>
+
+        <div className="flex justify-between mt-2">
+
+          <span className="text-blue-600 font-bold">
+
+            TZS {hostel.price}
+
+          </span>
+
+          <a
+
+            href={`/hostels/${hostel.id}`}
+
+            className="text-blue-500 text-sm"
+
+          >
+
+            View
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  )
+
+}
