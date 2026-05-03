@@ -1,0 +1,45 @@
+export const hostels = [
+
+  {
+
+    id: 1,
+
+    name: "Sky Hostel",
+
+    location: "Near UDSM",
+
+    price: 150000,
+
+    image: "https://source.unsplash.com/400x300/?hostel"
+
+  },
+
+  {
+
+    id: 2,
+
+    name: "City View Hostel",
+
+    location: "IFM Area",
+
+    price: 180000,
+
+    image: "https://source.unsplash.com/400x300/?building"
+
+  },
+
+  {
+
+    id: 3,
+
+    name: "Green Lodge",
+
+    location: "Ardhi University",
+
+    price: 120000,
+
+    image: "https://source.unsplash.com/400x300/?room"
+
+  }
+
+]
