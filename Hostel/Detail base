@@ -1,0 +1,59 @@
+import { hostels } from "@/lib/data"
+
+export default function HostelDetail({ params }) {
+
+  const hostel = hostels.find(h => h.id == params.id)
+
+  return (
+
+    <div className="p-6">
+
+      <img
+
+        src={hostel.image}
+
+        className="w-full h-64 object-cover rounded"
+
+      />
+
+      <h1 className="text-2xl font-bold mt-4">
+
+        {hostel.name}
+
+      </h1>
+
+      <p className="text-gray-500">
+
+        {hostel.location}
+
+      </p>
+
+      <p className="mt-4">
+
+        This hostel provides safe and affordable accommodation for students.
+
+      </p>
+
+      <div className="text-blue-600 font-bold mt-4 text-xl">
+
+        TZS {hostel.price} / month
+
+      </div>
+
+      <a
+
+        href="https://wa.me/255700000000"
+
+        className="inline-block mt-4 bg-green-500 text-white px-4 py-2 rounded"
+
+      >
+
+        Contact on WhatsApp
+
+      </a>
+
+    </div>
+
+  )
+
+}
